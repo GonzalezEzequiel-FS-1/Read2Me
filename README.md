@@ -1,10 +1,10 @@
-# ReadWithMe – Startup Strategy & Prototype Repository
+# Read2Me – Startup Strategy & Prototype Repository
 
-This repository documents the development of **ReadWithMe**, a startup concept focused on making remote storytime and tutoring feel as natural and connected as being in the same room. The project includes strategic materials, product planning, and technical prototypes for future MVP development.
+This repository documents the development of **Read2Me**, a startup concept focused on making remote storytime and tutoring feel as natural and connected as being in the same room. The project includes strategic materials, product planning, and technical prototypes for future MVP development.
 
 ## 🌟 Vision
 
-**ReadWithMe** enables parents, grandparents, and tutors to share digital books in real time with synchronized page turning and optional video. The goal is to bring emotional presence to remote reading and learning experiences.
+**Read2Me** enables parents, grandparents, and tutors to share digital books in real time with synchronized page turning and optional video. The goal is to bring emotional presence to remote reading and learning experiences.
 
 ## 🧩 Repository Contents
 
