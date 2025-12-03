@@ -21,15 +21,22 @@ export const SignScreen = () => {
   const [error, setError] = useState<string>("");
   const [passwordsMatch, setPasswordsMatch] = useState<boolean>(false);
 
-  const checkPasswordsMatch = () => {
-    if (confirmPass !== password) {
-      setError("Passwords do not match");
-      return false;
+  // Check if passwords match when signing up
+  useEffect(() => {
+    if (isSignUp) {
+      if (confirmPass && password !== confirmPass) {
+        setError("Passwords do not match");
+        setPasswordsMatch(false);
+      } else {
+        setError("");
+        setPasswordsMatch(true);
+      }
+    } else {
+      setPasswordsMatch(true); // always true when signing in
     }
-    return true;
-  };
+  }, [password, confirmPass, isSignUp]);
 
-  // Automatically redirect if user is already logged in
+  // Redirect if user is already logged in
   useEffect(() => {
     if (user) {
       navigate("/home");
@@ -45,11 +52,13 @@ export const SignScreen = () => {
       return;
     }
 
+    if (isSignUp && !passwordsMatch) {
+      setError("Passwords do not match");
+      return;
+    }
+
     try {
       if (isSignUp) {
-        const matches = checkPasswordsMatch();
-        if (!matches) return; // stop if passwords don't match
-
         await registerWithEmailAndPassword(email, password);
       } else {
         await loginWithEmailAndPassword(email, password);
@@ -73,7 +82,6 @@ export const SignScreen = () => {
       await loginWithGoogle();
       navigate("/home");
     } catch (err: unknown) {
-      // Narrow unknown to check for common error shapes (object with code or message) or a string
       if (typeof err === "object" && err !== null && "code" in err) {
         const maybeErr = err as { code?: string; message?: string };
         setError(maybeErr.code || maybeErr.message || "Something went wrong");
@@ -124,19 +132,26 @@ export const SignScreen = () => {
             setPassword(e.target.value);
           }}
         />
-        <TextInput
-          label="Confirm Password"
-          type="password"
-          value={confirmPass}
-          onChange={(e: { target: { value: SetStateAction<string> } }) => {
-            setError("");
-            setConfirmPass(e.target.value);
-          }}
-        />
 
-        <Button onClick={handleEmailAuth}>
+        {isSignUp && (
+          <TextInput
+            label="Confirm Password"
+            type="password"
+            value={confirmPass}
+            onChange={(e: { target: { value: SetStateAction<string> } }) => {
+              setError("");
+              setConfirmPass(e.target.value);
+            }}
+          />
+        )}
+
+        <Button
+          disabled={isSignUp ? !passwordsMatch : false}
+          onClick={handleEmailAuth}
+        >
           {isSignUp ? "Register" : "Login"}
         </Button>
+
         <Button onClick={handleGoogleLogin}>
           {isSignUp ? "Sign Up with Google" : "Sign In with Google"}
         </Button>
