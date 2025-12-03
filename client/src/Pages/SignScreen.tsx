@@ -17,7 +17,17 @@ export const SignScreen = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [isSignUp, setIsSignUp] = useState<boolean>(false);
+  const [confirmPass, setConfirmPass] = useState<string>("");
   const [error, setError] = useState<string>("");
+  const [passwordsMatch, setPasswordsMatch] = useState<boolean>(false);
+
+  const checkPasswordsMatch = () => {
+    if (confirmPass !== password) {
+      setError("Passwords do not match");
+      return false;
+    }
+    return true;
+  };
 
   // Automatically redirect if user is already logged in
   useEffect(() => {
@@ -37,13 +47,15 @@ export const SignScreen = () => {
 
     try {
       if (isSignUp) {
+        const matches = checkPasswordsMatch();
+        if (!matches) return; // stop if passwords don't match
+
         await registerWithEmailAndPassword(email, password);
       } else {
         await loginWithEmailAndPassword(email, password);
       }
       navigate("/home");
     } catch (err: unknown) {
-      // Narrow unknown to check for common error shapes (object with code or message) or a string
       if (typeof err === "object" && err !== null && "code" in err) {
         const maybeErr = err as { code?: string; message?: string };
         setError(maybeErr.code || maybeErr.message || "Something went wrong");
@@ -98,7 +110,7 @@ export const SignScreen = () => {
         <TextInput
           label="Email"
           value={email}
-          onChange={(e: { target: { value: SetStateAction<string>; }; }) => {
+          onChange={(e: { target: { value: SetStateAction<string> } }) => {
             setError("");
             setEmail(e.target.value);
           }}
@@ -107,9 +119,18 @@ export const SignScreen = () => {
           label="Password"
           type="password"
           value={password}
-          onChange={(e: { target: { value: SetStateAction<string>; }; }) => {
+          onChange={(e: { target: { value: SetStateAction<string> } }) => {
             setError("");
             setPassword(e.target.value);
+          }}
+        />
+        <TextInput
+          label="Confirm Password"
+          type="password"
+          value={confirmPass}
+          onChange={(e: { target: { value: SetStateAction<string> } }) => {
+            setError("");
+            setConfirmPass(e.target.value);
           }}
         />
 

@@ -19,6 +19,9 @@ export const FileUploader = () => {
   const [file, setFile] = useState<File | null>(null);
   const [fileName, setFileName] = useState("");
   const [serverMessage, setServerMessage] = useState("");
+  const [serverMessageType, setServerMessageType] = useState<
+    "success" | "error"
+  >("success");
 
   // Handle file drop
   const onDrop = useCallback((acceptedFiles: File[]) => {
@@ -26,12 +29,12 @@ export const FileUploader = () => {
       const selectedFile = acceptedFiles[0];
       setFile(selectedFile);
       setFileName(selectedFile.name);
+      setServerMessage("");
     }
   }, []);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 
-  // Clear selected file
   const clearFile = () => {
     setFile(null);
     setFileName("");
@@ -40,35 +43,28 @@ export const FileUploader = () => {
 
   // Upload file
   const handleUpload = async () => {
-    if (!file) {
-      console.log("No file selected");
-      return;
-    }
+    if (!file) return;
 
     const formData = new FormData();
     formData.append("file", file);
-
-    if (user?.uid) {
-      formData.append("uid", user.uid);
-    }
+    if (user?.uid) formData.append("uid", user.uid);
 
     try {
       const response = await axios.post(`${DBURL}/upload`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
+        headers: { "Content-Type": "multipart/form-data" },
+        validateStatus: (status) => status < 500, // treat 400 as "success" so it doesn’t throw
       });
 
-      console.log("Upload success:", response.data);
-      setServerMessage(response.data.message || "Upload successful");
-    } catch (err: any) {
-      console.error("Upload error:", err);
-
-      if (err.response && err.response.data && err.response.data.message) {
-        setServerMessage(err.response.data.message); // e.g., "File already exists"
+      if (response.status === 200) {
+        setServerMessage(response.data.message || "Upload successful");
+        setServerMessageType("success");
       } else {
-        setServerMessage(err.message || "Upload failed");
+        setServerMessage(response.data.message || "Upload failed");
+        setServerMessageType("error");
       }
+    } catch (err: any) {
+      setServerMessage(err.message || "Upload failed");
+      setServerMessageType("error");
     }
   };
 
@@ -112,7 +108,13 @@ export const FileUploader = () => {
       )}
 
       {serverMessage && (
-        <Typography variant="body2" sx={{ mt: 1, color: "green" }}>
+        <Typography
+          variant="body2"
+          sx={{
+            mt: 1,
+            color: serverMessageType === "success" ? "green" : "red",
+          }}
+        >
           {serverMessage}
         </Typography>
       )}

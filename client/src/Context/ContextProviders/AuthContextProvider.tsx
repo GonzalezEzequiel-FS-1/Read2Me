@@ -11,6 +11,7 @@ import {
   type User,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import createUser from "../../utils/userDBInteraction.js";
 
 interface Props {
   children: ReactNode;
@@ -36,7 +37,9 @@ export const AuthContextProvider = ({ children }: Props) => {
   const loginWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      setUser(result.user);
+      const user = result.user;
+      await createUser(user.email, user.uid);
+      setUser(user);
       nav("/home");
     } catch (err) {
       console.error("Google login failed:", err);
@@ -79,7 +82,9 @@ export const AuthContextProvider = ({ children }: Props) => {
         email,
         password
       );
-      setUser(result.user); // Update context with the newly created user
+      const user = result.user;
+      await createUser(user.email, user.uid);
+      setUser(user);
     } catch (err) {
       console.error("Email registration failed:", err);
       throw err;

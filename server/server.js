@@ -1,15 +1,19 @@
 const express = require("express");
 const cors = require("cors");
-const dotEnv = require("dotenv").config;
+require("dotenv").config();
 const morgan = require("morgan");
+const { dbConnection } = require("./src/db/connection/dbConnection");
 const app = express();
+app.use(express.json());
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT;
 app.use(cors());
 app.use(morgan("dev"));
 const routes = require("./src/routes/index");
+
 app.use("/api", routes);
-app.use(express.json());
+
+dbConnection();
 
 app.listen(PORT, () => {
   console.log(`Server Listening on port ${PORT}`);
