@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import ButtonUsage from "../components/ButtonUsage";
-import { Box, Button, Container, Typography } from "@mui/material";
-import { Logout } from "@mui/icons-material";
+import {FileUploader} from '../components/FileUploader'
+import { Box, Button, Container, IconButton, Typography } from "@mui/material";
+import { FileUpload, Logout } from "@mui/icons-material";
 import { AuthContext } from "../Context/ContextDeclaration/AuthContext";
 
 const Home = () => {
@@ -25,9 +25,10 @@ const Home = () => {
       </Container>
       <Container>
         <Typography variant="h2">Bottom</Typography>
-        <Button onClick={appSignOut}>
+        <IconButton onClick={appSignOut}>
           <Logout />
-        </Button>
+        </IconButton>
+        <FileUploader />
       </Container>
     </Box>
   );

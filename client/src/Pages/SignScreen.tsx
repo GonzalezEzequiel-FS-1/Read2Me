@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, type SetStateAction } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/ContextDeclaration/AuthContext";
 import { Button, Container, Stack, Typography } from "@mui/material";
@@ -42,8 +42,16 @@ export const SignScreen = () => {
         await loginWithEmailAndPassword(email, password);
       }
       navigate("/home");
-    } catch (err: any) {
-      setError(err.code || "Something went wrong");
+    } catch (err: unknown) {
+      // Narrow unknown to check for common error shapes (object with code or message) or a string
+      if (typeof err === "object" && err !== null && "code" in err) {
+        const maybeErr = err as { code?: string; message?: string };
+        setError(maybeErr.code || maybeErr.message || "Something went wrong");
+      } else if (typeof err === "string") {
+        setError(err);
+      } else {
+        setError("Something went wrong");
+      }
     }
   };
 
@@ -52,8 +60,16 @@ export const SignScreen = () => {
     try {
       await loginWithGoogle();
       navigate("/home");
-    } catch (err: any) {
-      setError(err.code || "Something went wrong");
+    } catch (err: unknown) {
+      // Narrow unknown to check for common error shapes (object with code or message) or a string
+      if (typeof err === "object" && err !== null && "code" in err) {
+        const maybeErr = err as { code?: string; message?: string };
+        setError(maybeErr.code || maybeErr.message || "Something went wrong");
+      } else if (typeof err === "string") {
+        setError(err);
+      } else {
+        setError("Something went wrong");
+      }
     }
   };
 
@@ -82,7 +98,7 @@ export const SignScreen = () => {
         <TextInput
           label="Email"
           value={email}
-          onChange={(e) => {
+          onChange={(e: { target: { value: SetStateAction<string>; }; }) => {
             setError("");
             setEmail(e.target.value);
           }}
@@ -91,7 +107,7 @@ export const SignScreen = () => {
           label="Password"
           type="password"
           value={password}
-          onChange={(e) => {
+          onChange={(e: { target: { value: SetStateAction<string>; }; }) => {
             setError("");
             setPassword(e.target.value);
           }}
