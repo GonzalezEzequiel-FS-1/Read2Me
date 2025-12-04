@@ -23,7 +23,7 @@ const Home = () => {
         <Typography variant="h2">Top</Typography>
       </Container>
       <Container>
-        <PdfViewer file="/Yb.pdf" />
+        {/* <PdfViewer file="/Yb.pdf" /> */}
         <Typography variant="h2">Mid</Typography>
       </Container>
       <Container>
