@@ -14,6 +14,7 @@ const {
   editUser,
   deleteUser,
   deleteAllUsers,
+  toggleProfileVisibility,
 } = require("../controllers/userController");
 
 // Upload file (single file with field name "file")
@@ -56,5 +57,11 @@ router.route("/file/share").get(loadSharedFiles).patch(shareFile);
 
 router.delete("/file", deleteFile);
 router.get("/file/all", loadUserFiles);
+
+// Toggle Visibility
+router.patch("/user/visibility", toggleProfileVisibility);
+
+// Add a friend
+//router.patch("/user/contact", addContact);
 
 module.exports = router;
