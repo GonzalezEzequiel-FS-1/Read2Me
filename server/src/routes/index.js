@@ -21,6 +21,20 @@ router.post("/upload", (req, res) => {
   });
 });
 
+router.get("/test", (req, res) => {
+  try {
+    return res.status(200).json({
+      success: true,
+      message: "Server Works",
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+});
+
 router.post("/user", createUser);
 router.get("/user", getUser);
 router.patch("/user", editUser);

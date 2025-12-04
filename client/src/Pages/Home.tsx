@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
-import {FileUploader} from '../components/FileUploader'
+import { FileUploader } from "../components/FileUploader";
 import { Box, Button, Container, IconButton, Typography } from "@mui/material";
 import { FileUpload, Logout } from "@mui/icons-material";
 import { AuthContext } from "../Context/ContextDeclaration/AuthContext";
+import PdfViewer from "../components/PdfViewer";
 
 const Home = () => {
   const { appSignOut } = useContext(AuthContext);
+
   return (
     <Box
       sx={{
@@ -21,6 +23,7 @@ const Home = () => {
         <Typography variant="h2">Top</Typography>
       </Container>
       <Container>
+        <PdfViewer file="/Yb.pdf" />
         <Typography variant="h2">Mid</Typography>
       </Container>
       <Container>
