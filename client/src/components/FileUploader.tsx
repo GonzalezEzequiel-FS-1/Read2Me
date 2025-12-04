@@ -10,6 +10,7 @@ import axios from "axios";
 import { useCallback, useContext, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { AuthContext } from "../Context/ContextDeclaration/AuthContext";
+import { handleUpload } from "../utils/fileUploader";
 
 const DBURL = "http://localhost:3003/api";
 
@@ -33,39 +34,18 @@ export const FileUploader = () => {
     }
   }, []);
 
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+  const { getRootProps, getInputProps, isDragActive, fileRejections } =
+    useDropzone({
+      onDrop,
+      accept: {
+        "application/pdf": [".pdf"],
+      },
+    });
 
   const clearFile = () => {
     setFile(null);
     setFileName("");
     setServerMessage("");
-  };
-
-  // Upload file
-  const handleUpload = async () => {
-    if (!file) return;
-
-    const formData = new FormData();
-    formData.append("file", file);
-    if (user?.uid) formData.append("uid", user.uid);
-
-    try {
-      const response = await axios.post(`${DBURL}/upload`, formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-        validateStatus: (status) => status < 500, // treat 400 as "success" so it doesn’t throw
-      });
-
-      if (response.status === 200) {
-        setServerMessage(response.data.message || "Upload successful");
-        setServerMessageType("success");
-      } else {
-        setServerMessage(response.data.message || "Upload failed");
-        setServerMessageType("error");
-      }
-    } catch (err: any) {
-      setServerMessage(err.message || "Upload failed");
-      setServerMessageType("error");
-    }
   };
 
   return (
@@ -84,7 +64,17 @@ export const FileUploader = () => {
             <input {...getInputProps()} />
             {!isDragActive ? <FileUploadTwoTone /> : <FileUploadRounded />}
           </IconButton>
-          <IconButton onClick={handleUpload}>
+          <IconButton
+            onClick={() =>
+              handleUpload(
+                file,
+                user,
+                DBURL,
+                setServerMessage,
+                setServerMessageType
+              )
+            }
+          >
             <TextSnippet />
           </IconButton>
         </Box>
@@ -98,7 +88,17 @@ export const FileUploader = () => {
           }}
         >
           <Typography>{fileName}</Typography>
-          <IconButton onClick={handleUpload}>
+          <IconButton
+            onClick={() =>
+              handleUpload(
+                file,
+                user,
+                DBURL,
+                setServerMessage,
+                setServerMessageType
+              )
+            }
+          >
             <Save />
           </IconButton>
           <IconButton onClick={clearFile}>
@@ -117,6 +117,20 @@ export const FileUploader = () => {
         >
           {serverMessage}
         </Typography>
+      )}
+      {fileRejections.length > 0 && (
+        <Box sx={{ mt: 1 }}>
+          {fileRejections.map(({ file, errors }) => (
+            <Box key={file.name}>
+              <Typography color="error">{file.name} was rejected:</Typography>
+              {errors.map((e) => (
+                <Typography key={e.code} color="error" variant="body2">
+                  {e.message}
+                </Typography>
+              ))}
+            </Box>
+          ))}
+        </Box>
       )}
     </Box>
   );

@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const UserSchema = new Schema({
+  // User's Email
   email: {
     type: String,
     match: [
@@ -8,12 +9,30 @@ const UserSchema = new Schema({
       "Please fill a valid email address",
     ],
   },
+  //User's UID
   uid: {
     type: String,
   },
-  userFiles: {
-    type: Array,
+  // User's files schema reference
+  userFiles: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Document",
+    },
+  ],
+  // Profile visibility
+  public: {
+    type: Boolean,
+    default: false,
   },
+  // Friends List
+  contactList: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
+  // Date and time created
   createdAt: {
     type: Date,
     default: Date.now,

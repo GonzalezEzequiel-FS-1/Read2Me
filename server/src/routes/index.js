@@ -1,7 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../middleware/multerConfig");
-const { uploadFile } = require("../controllers/fileController");
+const {
+  uploadFile,
+  deleteFile,
+  loadUserFiles,
+  loadSharedFiles,
+  shareFile,
+} = require("../controllers/fileController");
 const {
   createUser,
   getUser,
@@ -35,10 +41,20 @@ router.get("/test", (req, res) => {
   }
 });
 
-router.post("/user", createUser);
-router.get("/user", getUser);
-router.patch("/user", editUser);
-router.delete("/user", deleteUser);
+// User routes
+router
+  .route("/user")
+  .post(createUser)
+  .get(getUser)
+  .patch(editUser)
+  .delete(deleteUser);
+
 router.delete("/users/all", deleteAllUsers);
+
+// File routes
+router.route("/file/share").get(loadSharedFiles).patch(shareFile);
+
+router.delete("/file", deleteFile);
+router.get("/file/all", loadUserFiles);
 
 module.exports = router;
