@@ -6,6 +6,7 @@ import { SignScreen } from "./Pages/SignScreen";
 import { NotFound } from "./Pages/NotFound";
 import { Box } from "@mui/material";
 import { ProtectedRoute } from "./utils/ProtectedRoutes";
+import SimpleBottomNavigation from "./components/BottomNavigation";
 const App = () => {
   return (
     <Box
@@ -19,6 +20,7 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Home />
+              <SimpleBottomNavigation />
             </ProtectedRoute>
           }
         />

@@ -14,5 +14,15 @@ export const ProtectedRoute = ({ children }: Props) => {
 
   if (!user) return <Navigate to="/" replace />;
 
-  return <>{children}</>; 
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+      }}
+    >
+      {children}
+    </div>
+  );
 };

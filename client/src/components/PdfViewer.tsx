@@ -4,7 +4,6 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import {
   Box,
-  Button,
   IconButton,
   Paper,
   Slider,
@@ -133,7 +132,7 @@ const PdfViewer: React.FC<PdfViewerProps> = ({ file }) => {
     );
 
   return (
-    <Box sx={{ width: "100%", maxWidth: "1200px", mx: "auto" }}>
+    <Box sx={{  width: "100%", maxWidth: "1200px", mx: "auto" }}>
       {/* Toolbar */}
       <Paper
         elevation={3}
