@@ -19,20 +19,12 @@ const Home = () => {
         textAlign: "center",
       }}
     >
-      <Container>
-        <Typography variant="h2">Top</Typography>
-      </Container>
-      <Container>
-        <PdfViewer file="/Yb.pdf" />
-        <Typography variant="h2">Mid</Typography>
-      </Container>
-      <Container>
-        <Typography variant="h2">Bottom</Typography>
-        <IconButton onClick={appSignOut}>
-          <Logout />
-        </IconButton>
-        <FileUploader />
-      </Container>
+      <PdfViewer file="/Yb.pdf" />
+
+      <IconButton onClick={appSignOut}>
+        <Logout />
+      </IconButton>
+      <FileUploader />
     </Box>
   );
 };
