@@ -7,6 +7,8 @@ const {
   loadUserFiles,
   loadSharedFiles,
   shareFile,
+  selectFile,
+  createThumbnail,
 } = require("../controllers/fileController");
 const {
   createUser,
@@ -28,19 +30,19 @@ router.post("/upload", (req, res) => {
   });
 });
 
-router.get("/test", (req, res) => {
-  try {
-    return res.status(200).json({
-      success: true,
-      message: "Server Works",
-    });
-  } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: error.message,
-    });
-  }
-});
+// router.get("/test", (req, res) => {
+//   try {
+//     return res.status(200).json({
+//       success: true,
+//       message: "Server Works",
+//     });
+//   } catch (error) {
+//     return res.status(500).json({
+//       success: false,
+//       message: error.message,
+//     });
+//   }
+// });
 
 // User routes
 router
@@ -55,11 +57,14 @@ router.delete("/users/all", deleteAllUsers);
 // File routes
 router.route("/file/share").get(loadSharedFiles).patch(shareFile);
 
-router.delete("/file", deleteFile);
+router.route("/file").delete(deleteFile).get(selectFile);
+
 router.get("/file/all", loadUserFiles);
 
 // Toggle Visibility
 router.patch("/user/visibility", toggleProfileVisibility);
+
+router.get("/thumbnail", createThumbnail);
 
 // Add a friend
 //router.patch("/user/contact", addContact);

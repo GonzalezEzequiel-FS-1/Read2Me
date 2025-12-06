@@ -11,6 +11,8 @@ app.use(cors());
 app.use(morgan("dev"));
 const routes = require("./src/routes/index");
 
+app.use("/file", express.static("uploads"));
+
 app.use("/api", routes);
 
 dbConnection();

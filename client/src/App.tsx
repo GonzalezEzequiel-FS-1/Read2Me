@@ -20,7 +20,7 @@ const App = () => {
           element={
             <ProtectedRoute>
               <Home />
-              <SimpleBottomNavigation />
+              {/* <SimpleBottomNavigation /> */}
             </ProtectedRoute>
           }
         />

@@ -7,7 +7,8 @@ const {
 } = require("../utils/utils");
 const Document = require("../db/models/Document");
 const User = require("../db/models/User");
-const uploadDir = path.join(__dirname, "../uploads");
+const thumbnailGenerator = require("../utils/ThumbnailGenerator");
+const uploadDir = path.join(__dirname, "../../uploads");
 
 const addToUser = async (uid, filename) => {
   // Normalize once here
@@ -35,14 +36,78 @@ const addToUser = async (uid, filename) => {
   return savedFile;
 };
 
+// const uploadFile = async (req, res) => {
+//   const uid = req.body.uid;
+//   const file = req.file;
+//   console.log("inside uploadFile Function");
+//   if (!uid) {
+//     return res.status(400).json({ success: false, error: "No UID received" });
+//   }
+
+//   if (!file) {
+//     return res.status(400).json({
+//       success: false,
+//       message: "No file received",
+//     });
+//   }
+//   let thumbnail;
+//   try {
+//     // ONLY normalize for logging, not for logic
+//     const normalizedName = normalizeName(file.originalname);
+
+//     console.log("Normalized as:", normalizedName);
+
+//     // Pass the real filename (with extension) to addToUser
+//     // It will normalize it once
+//     const savedFile = await addToUser(uid, file.originalname);
+//     console.log("After Saved File");
+//     const fileBaseName = path.parse(file.filename).name; // this matches the folder created by multer
+//     console.log("After FileBase NAme");
+//     console.error(`FILEBASENAME!!!!!!!!!!!!${fileBaseName}`);
+//     try {
+//       console.log("Before Thumbnail");
+//       thumbnail = await thumbnailGenerator(uid, fileBaseName);
+//       console.log(thumbnail.thumbnailPath);
+//     } catch (err) {
+//       return res.status(500).json({
+//         success: false,
+//         message: err.message,
+//       });
+//     }
+
+//     return res.status(200).json({
+//       success: true,
+//       // actual saved file on disk
+//       message: `Saved as ${file.filename}`,
+//       userID: uid,
+//       path: file.path,
+//       documentID: savedFile._id,
+//       thumbnailPath: thumbnail.thumbnailPath,
+//     });
+//   } catch (err) {
+//     return res.status(500).json({
+//       success: false,
+//       message: err.message,
+//     });
+//   }
+// };
+
 const uploadFile = async (req, res) => {
+  // Extract the user ID and the uploaded file from the request
   const uid = req.body.uid;
   const file = req.file;
 
+  console.log("inside uploadFile Function"); // log entry into the function
+
+  // Validate that a UID was provided
   if (!uid) {
-    return res.status(400).json({ success: false, error: "No UID received" });
+    return res.status(400).json({
+      success: false,
+      error: "No UID received",
+    });
   }
 
+  // Validate that a file was uploaded
   if (!file) {
     return res.status(400).json({
       success: false,
@@ -50,25 +115,49 @@ const uploadFile = async (req, res) => {
     });
   }
 
-  try {
-    // ONLY normalize for logging, not for logic
-    const normalizedName = normalizeName(file.originalname);
+  // Declare the variable for thumbnail outside of try/catch so it is in scope for the response
+  let thumbnail;
 
+  try {
+    // Normalize the file name for consistent logging and storage
+    // Example: "Niñas.pdf" -> "ninias"
+    const normalizedName = normalizeName(file.originalname);
     console.log("Normalized as:", normalizedName);
 
-    // Pass the real filename (with extension) to addToUser
-    // It will normalize it once
+    // Save file info to the database
+    // addToUser handles storing metadata about the uploaded file, including its normalized name
     const savedFile = await addToUser(uid, file.originalname);
+    console.log("After Saved File");
 
+    // Extract the base file name (without extension) from the file saved by Multer
+    // This matches the folder created for the file storage
+    const fileBaseName = path.parse(file.filename).name;
+    console.log("After FileBaseName:", fileBaseName);
+
+    // Log for debugging / monitoring
+    console.log("Before Thumbnail");
+
+    // Generate a thumbnail of the first page of the PDF
+    // thumbnailGenerator reads the PDF from storage and creates a PNG in the same folder
+    thumbnail = await thumbnailGenerator(uid, fileBaseName);
+    console.log("Thumbnail generated at:", thumbnail.thumbnailPath);
+
+    // Respond to the client with success
+    // Includes paths to both the uploaded PDF and the generated thumbnail
     return res.status(200).json({
       success: true,
-      // actual saved file on disk
       message: `Saved as ${file.filename}`,
       userID: uid,
-      path: file.path,
-      documentID: savedFile._id,
+      path: file.path, // Path to the uploaded PDF on disk
+      documentID: savedFile._id, // MongoDB document ID for reference
+      thumbnailPath: thumbnail.thumbnailPath, // Path to the generated thumbnail PNG
     });
   } catch (err) {
+    // Catch any errors that occur during DB save or thumbnail generation
+    // Log the error for debugging
+    console.error("Error in uploadFile:", err);
+
+    // Respond with 500 to indicate a server error
     return res.status(500).json({
       success: false,
       message: err.message,
@@ -131,38 +220,49 @@ const deleteFile = async (req, res) => {
 };
 
 const loadUserFiles = async (req, res) => {
-  const uid = req.body.uid;
-  console.log(`Inside Load User Files function with uid: ${uid}`);
+  const { uid } = req.body;
+
   if (!uid) {
     return res.status(400).json({
       success: false,
       message: "No User ID Received",
     });
   }
-  console.log("After UID Check");
 
   try {
-    console.log("inside loadUserFiles try/catch");
     const userfiles = await Document.find({ ownerUID: uid });
-    console.log(userfiles);
 
     if (userfiles.length === 0) {
-      console.log("Inside userfiles.length if");
       return res.status(400).json({
         success: false,
         message: `User with id ${uid} has no stored files`,
       });
     }
 
-    // Map the filenames to humanized versions
-    const humanizedFiles = userfiles.map((file) => ({
-      ...file.toObject(), // include other properties if needed
-      humanizedName: humanizeFileName(file.documentName),
-    }));
+    // Map the filenames to humanized versions and include thumbnail paths
+    const humanizedFiles = userfiles.map((file) => {
+      const fileBaseName = path.parse(file.documentName).name; // remove .pdf
+      const fileFolder = path.join(
+        __dirname,
+        "../../uploads",
+        uid,
+        fileBaseName
+      );
+      const thumbnailPath = path.join(fileFolder, `${fileBaseName}-thumb.png`);
+
+      // Check if thumbnail exists
+      const thumbnailExists = fs.existsSync(thumbnailPath);
+
+      return {
+        ...file.toObject(),
+        humanizedName: humanizeFileName(file.documentName),
+        thumbnailPath
+      };
+    });
 
     return res.status(200).json({
       success: true,
-      files: humanizedFiles,
+      userFiles: humanizedFiles,
     });
   } catch (err) {
     return res.status(500).json({
@@ -170,6 +270,42 @@ const loadUserFiles = async (req, res) => {
       message: err.message,
     });
   }
+};
+
+const selectFile = async (req, res) => {
+  // Receive the file from the user's request
+  const { uid, selectedFile } = req.body;
+  console.log(uid, selectedFile);
+  if (!uid || !selectedFile) {
+    return res.status(400).json({
+      success: false,
+      message: `Incomplete Data Received uid=${uid}, selectedFile = ${selectedFile}`,
+    });
+  }
+  console.log("After uid check");
+  try {
+    console.log("Inside try");
+    // Check if the user has the file in the database
+    const fileOnDB = await Document.findById(selectedFile);
+
+    console.log(`File Path ${uploadDir}`);
+    // Search the document storage for the file
+
+    // Return an error if the file is not found
+
+    // Return the Requested file
+    return res.status(200).json({
+      success: true,
+      requestedFile: fileOnDB,
+    });
+  } catch (err) {
+    return res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
+
+  // Catch any errors
 };
 
 const shareFile = async (req, res) => {
@@ -218,10 +354,29 @@ const loadSharedFiles = async (req, res) => {
   }
 };
 
+const createThumbnail = async (req, res) => {
+  const { uid, selectedFile } = req.body;
+  try {
+    console.log(selectedFile);
+    const thumbnail = await thumbnailGenerator(uid, selectedFile);
+    return res.status(200).json({
+      success: true,
+      thumbnail,
+    });
+  } catch (err) {
+    return res.status(500).json({
+      success: false,
+      error: err.message,
+    });
+  }
+};
+
 module.exports = {
+  createThumbnail,
   uploadFile,
   deleteFile,
   loadUserFiles,
   shareFile,
   loadSharedFiles,
+  selectFile,
 };
