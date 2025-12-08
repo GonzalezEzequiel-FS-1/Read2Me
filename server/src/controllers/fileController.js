@@ -12,6 +12,7 @@ const uploadDir = path.join(__dirname, "../../uploads");
 
 const addToUser = async (uid, filename) => {
   // Normalize once here
+  console.log("inside addToUser");
   const normalizedName = normalizeName(filename);
 
   // Check if the user already has a document with this name
@@ -32,6 +33,7 @@ const addToUser = async (uid, filename) => {
 
   // Add the document reference to the user
   await User.findOneAndUpdate({ uid }, { $push: { userFiles: savedFile._id } });
+  console.log(savedFile);
 
   return savedFile;
 };
@@ -94,7 +96,7 @@ const addToUser = async (uid, filename) => {
 
 const uploadFile = async (req, res) => {
   // Extract the user ID and the uploaded file from the request
-  const uid = req.body.uid;
+  const uid = req.query.uid;
   const file = req.file;
 
   console.log("inside uploadFile Function"); // log entry into the function
@@ -256,7 +258,7 @@ const loadUserFiles = async (req, res) => {
       return {
         ...file.toObject(),
         humanizedName: humanizeFileName(file.documentName),
-        thumbnailPath
+        thumbnailPath,
       };
     });
 

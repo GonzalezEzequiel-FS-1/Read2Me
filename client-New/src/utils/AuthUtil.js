@@ -8,7 +8,27 @@ import {
   updateProfile,
   sendPasswordResetEmail,
 } from "firebase/auth";
+import axios from "axios";
 const auth = getAuth();
+const APIURL = "http://localhost:3003/api/user";
+
+const createUserInDB = async (email, uid) => {
+  try {
+    await axios.post(
+      APIURL,
+      { email, uid },
+      {
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+    return userInDB;
+  } catch (err) {
+    return {
+      success: false,
+      error: err.message,
+    };
+  }
+};
 
 const checkPasswordMatch = async (password, confirmPass) => ({
   success: password === confirmPass,
@@ -58,12 +78,13 @@ const emailSign = async (email, password, confirmPass, userName) => {
         email,
         password
       );
-
       // Safe: updateProfile AFTER firebase sets currentUser
       await updateProfile(auth.currentUser, {
         displayName: userName || "",
       });
-
+      const uid = signUp.user.uid;
+      await createUserInDB(email, uid);
+      console.log(uid);
       return {
         success: true,
         message: `User ${email} successfully signed up`,
@@ -76,7 +97,8 @@ const emailSign = async (email, password, confirmPass, userName) => {
   // SIGN IN FLOW
   try {
     const signIn = await signInWithEmailAndPassword(auth, email, password);
-
+    const uid = signIn.user.uid;
+    await createUserInDB(email, uid);
     return {
       success: true,
       message: `User ${email} successfully signed in`,
@@ -110,13 +132,12 @@ const socialSign = async (providerID) => {
   }
   try {
     const popSign = await signInWithPopup(auth, provider);
-    if (popSign) {
-      return { success: true, message: "User Authenticated Successfully" };
-    }
+    await createUserInDB(popSign.user.email, popSign.user.uid);
+    return { success: true, message: "User Authenticated Successfully" };
   } catch (err) {
     return {
       success: false,
-      message: "Error caught during authentication",
+      message: "Error during social authentication",
       error: err.message,
     };
   }
