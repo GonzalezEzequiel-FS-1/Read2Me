@@ -18,6 +18,7 @@ const {
   deleteAllUsers,
   toggleProfileVisibility,
 } = require("../controllers/userController");
+const serverHealth = require("../controllers/serverHealth");
 
 // Upload file (single file with field name "file")
 router.post("/upload", (req, res) => {
@@ -30,19 +31,19 @@ router.post("/upload", (req, res) => {
   });
 });
 
-// router.get("/test", (req, res) => {
-//   try {
-//     return res.status(200).json({
-//       success: true,
-//       message: "Server Works",
-//     });
-//   } catch (error) {
-//     return res.status(500).json({
-//       success: false,
-//       message: error.message,
-//     });
-//   }
-// });
+router.get("/test", (req, res) => {
+  try {
+    return res.status(200).json({
+      success: true,
+      message: "Server Works",
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+});
 
 // User routes
 router
@@ -68,5 +69,7 @@ router.get("/thumbnail", createThumbnail);
 
 // Add a friend
 //router.patch("/user/contact", addContact);
+
+router.get("/health", serverHealth);
 
 module.exports = router;

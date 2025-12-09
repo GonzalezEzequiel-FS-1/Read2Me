@@ -1,6 +1,7 @@
 const { fromPath } = require("pdf2pic");
 const path = require("path");
 const fs = require("fs");
+const { encode, decode } = require("png-metadata");
 
 const thumbnailGenerator = async (uid, fileBaseName) => {
   try {

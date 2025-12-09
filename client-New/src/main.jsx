@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="flex flex-col w-screen min-h-screen justify-start items-center">
+    <div className="flex flex-col w-full min-h-screen justify-start items-center">
       <MantineProvider theme={{ colorScheme: "light" }}>
         <BrowserRouter>
           <AuthProvider>

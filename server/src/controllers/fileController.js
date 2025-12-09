@@ -129,8 +129,9 @@ const uploadFile = async (req, res) => {
     // Save file info to the database
     // addToUser handles storing metadata about the uploaded file, including its normalized name
     const savedFile = await addToUser(uid, file.originalname);
-    console.log("After Saved File");
-
+    const imageonDB = await Document.findOne({ DocumentName: normalizedName });
+    const imageID = imageonDB._id;
+    console.log(imageID);
     // Extract the base file name (without extension) from the file saved by Multer
     // This matches the folder created for the file storage
     const fileBaseName = path.parse(file.filename).name;
