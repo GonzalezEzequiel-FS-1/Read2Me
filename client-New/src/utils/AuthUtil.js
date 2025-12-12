@@ -84,7 +84,7 @@ const emailSign = async (email, password, confirmPass, userName) => {
       });
       const uid = signUp.user.uid;
       await createUserInDB(email, uid);
-      console.log(uid);
+      //console.log(uid);
       return {
         success: true,
         message: `User ${email} successfully signed up`,

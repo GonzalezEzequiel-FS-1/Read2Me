@@ -15,6 +15,7 @@ export const Login = () => {
   const nav = useNavigate();
   const { error, setError, clearError, signOff } = useContext(AuthContext);
 
+
   const [isSignIn, setIsSignIn] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,6 +28,21 @@ export const Login = () => {
     setConfirmedPass("");
     clearError();
   }, [clearError]);
+
+  const handleSocialSign = async (provider) => {
+    try {
+      const response = await socialSign(provider);
+      if (response.success === true) {
+        nav("/home");
+      }
+      return;
+    } catch (err) {
+      return {
+        success: false,
+        message: `Unable to sign in with provider : ${provider}`,
+      };
+    }
+  };
 
   const handleSignIn = async () => {
     const result = await emailSign(
@@ -69,7 +85,7 @@ export const Login = () => {
   }, [email, password, confirmedPass]);
 
   return (
-    <div className="w-full max-w-[420px] px-4 text-center flex flex-col justify-between h-screen">
+    <div className="w-full m-auto max-w-[420px] px-4 text-center flex flex-col justify-between h-screen">
       <div className="h-full flex flex-col justify-center">
         <Logo />
         <div className="h-8">
@@ -153,7 +169,7 @@ export const Login = () => {
 
         <div className="w-full flex items-center justify-around">
           <ActionIcon
-            onClick={() => socialSign("GitHub")}
+            onClick={() => handleSocialSign("GitHub")}
             variant="transparent"
             size="xl"
           >
@@ -161,7 +177,7 @@ export const Login = () => {
           </ActionIcon>
 
           <ActionIcon
-            onClick={() => socialSign("Google")}
+            onClick={() => handleSocialSign("Google")}
             variant="transparent"
             size="xl"
           >

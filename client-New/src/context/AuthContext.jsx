@@ -17,6 +17,17 @@ export const AuthProvider = ({ children }) => {
   // Stores the currently authenticated user (or null if logged out)
   const [user, setUser] = useState(null);
 
+  const [userName, setUserName] = useState(null);
+
+  // Stores the currently authenticated user's avatar (or null if logged out)
+  const [avatar, setAvatar] = useState(null);
+
+  // Stores the currently authenticated user's email (or null if logged out)
+  const [email, setEmail] = useState(null);
+
+  // Stores the currently authenticated user's email (or null if logged out)
+  const [uid, setUID] = useState(null);
+
   // Used to delay UI from rendering until Firebase determines auth state
   // e.g., avoids flashing login screen when user is actually logged in
   const [loading, setLoading] = useState(true);
@@ -50,7 +61,19 @@ export const AuthProvider = ({ children }) => {
     // - User refreshes token in background
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       // Save the current user object (or null if logged out)
-      setUser(currentUser);
+      if (currentUser) {
+        setUser(currentUser);
+        setAvatar(currentUser.photoURL);
+        setEmail(currentUser.email);
+        setUID(currentUser.uid);
+        setUserName(currentUser.displayName);
+      } else {
+        setUser(null);
+        setAvatar(null);
+        setEmail(null);
+        setUID(null);
+        setUserName(null);
+      }
 
       // Tell the app that auth checking is done
       setLoading(false);
@@ -71,6 +94,10 @@ export const AuthProvider = ({ children }) => {
         setError, // allow UI to set error text
         clearError, // allow UI to clear error text
         signOff, // logout function for profile/settings pages
+        email,
+        avatar,
+        uid,
+        userName,
       }}
     >
       {/* Everything inside AuthProvider gets access to the context */}

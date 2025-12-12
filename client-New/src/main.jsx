@@ -1,22 +1,27 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
 import "./index.css";
+
 import App from "./App.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
-import { BrowserRouter } from "react-router-dom";
+import { NavigationProvider } from "./context/NavigationContext.jsx";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
+import MantineThemeWrapper from "./Components/wrappers/MantineThemeWrapper.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="flex flex-col w-full min-h-screen justify-start items-center">
-      <MantineProvider theme={{ colorScheme: "light" }}>
+    <ThemeProvider>
+      <MantineThemeWrapper>
         <BrowserRouter>
-          <AuthProvider>
-            <App />
-          </AuthProvider>
+          <NavigationProvider>
+            <AuthProvider>
+              <App />
+            </AuthProvider>
+          </NavigationProvider>
         </BrowserRouter>
-      </MantineProvider>
-    </div>
+      </MantineThemeWrapper>
+    </ThemeProvider>
   </StrictMode>
 );
