@@ -1,0 +1,1449 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1000000,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "PD69QgAACAAJ",
+      "etag": "mQ19iWCpLt8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/PD69QgAACAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publishedDate": "2002",
+        "description": "A beautiful illustrated boxed set collecting the two most popular Tolkien hardbacks -- the Centenary edition of The Lord of the Rings and the 60th Anniversary edition of The Hobbit, both illustrated by Alan Lee. Since they were first published, The Hobbit and The Lord of the Rings have been two books people have treasured. Steeped in unrivalled magic and otherworldliness, these works of sweeping fantasy have touched the hearts of young and old alike. Between them, nearly 100 million copies have been sold around the world. And no editions have proved more popular than the two that were illustrated by award-winning artist, Alan Lee -- the Centenary edition of The Lord of the Rings and the 60th Anniversary edition of The Hobbit. Now, for the first time, these two beautifully illustrated hardbacks have been collected together into one deluxe boxed set. Readers will be able to follow the complete story of the Hobbits and their part in the quest for the Ring -- beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom -- while also enjoying over seventy full-page colour paintings and numerous illustrations which acco",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0007149131"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007149131"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1137,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PD69QgAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PD69QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=PD69QgAACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=PD69QgAACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=PD69QgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PD69QgAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A beautiful illustrated boxed set collecting the two most popular Tolkien hardbacks -- the Centenary edition of The Lord of the Rings and the 60th Anniversary edition of The Hobbit, both illustrated by Alan Lee."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ptHZAAAAMAAJ",
+      "etag": "MtN0wJt3KYo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ptHZAAAAMAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "authors": [
+          "j.r.r. tolkien",
+          "John Ronald Reuel Tolkien"
+        ],
+        "publisher": "Mariner Books",
+        "publishedDate": "2001",
+        "description": "Contains the complete set of the six books of Lord of the Rings.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000045256417"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1176,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 11,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.7.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ptHZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ptHZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ptHZAAAAMAAJ&q=fantasy+lord+of+the+rings&dq=fantasy+lord+of+the+rings&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ptHZAAAAMAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=ptHZAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ptHZAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Contains the complete set of the six books of Lord of the Rings."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "VNGjJHLlLjkC",
+      "etag": "xNryU7ctYAU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/VNGjJHLlLjkC",
+      "volumeInfo": {
+        "title": "Tolkien",
+        "authors": [
+          "Lin Carter"
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 228,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=VNGjJHLlLjkC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=VNGjJHLlLjkC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=VNGjJHLlLjkC&q=fantasy+lord+of+the+rings&dq=fantasy+lord+of+the+rings&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=VNGjJHLlLjkC&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Tolkien.html?hl=&id=VNGjJHLlLjkC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=VNGjJHLlLjkC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "tDvZnQEACAAJ",
+      "etag": "RorI0SCLP8Y",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/tDvZnQEACAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings: The two towers",
+        "authors": [
+          "John Ronald Reuel Tolkien"
+        ],
+        "publishedDate": "2001",
+        "description": "Impossible to describe in a few words, Tolkien's great work of imaginative fiction has been labelled both a heroic romance and a classic fantasy fiction. This is a reissue celebrating the release of the major motion picture trilogy, incorporating images from the films on the covers.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0007129718"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007129713"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1137,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=tDvZnQEACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=tDvZnQEACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings_The_two_towers.html?hl=&id=tDvZnQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=tDvZnQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This is a reissue celebrating the release of the major motion picture trilogy, incorporating images from the films on the covers."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "vxRIEAAAQBAJ",
+      "etag": "90evitRwduk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/vxRIEAAAQBAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings Illustrated",
+        "subtitle": "Illustrated by J.R.R. Tolkien",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publisher": "HarperCollins",
+        "publishedDate": "2021-11-02",
+        "description": "For the first time ever, a very special edition of the J. R. R. Tolkien's classic masterpiece, The Lord of the Rings, gorgeously illustrated throughout in color by the author himself. Since it was first published in 1954, The Lord of the Rings has been a book people have treasured. Steeped in unrivaled magic and otherworldliness, Tolkien's sweeping fantasy and epic adventure has touched the hearts of young and old alike. More than 150 million copies of its many editions have been sold around the world, and occasional collectors’ editions become prized and valuable items of publishing. This one-volume, jacketed hardcover edition contains the complete text, fully corrected and reset, which is printed in red and black and features, for the very first time, thirty color illustrations, maps and sketches drawn by Tolkien himself as he composed this epic work. These include the pages from the Book of Mazarbul, marvelous facsimiles created by Tolkien to accompany the famous ‘Bridge of Khazad-dum’ chapter. Also appearing are two removable fold-out maps drawn by Christopher Tolkien revealing all the detail of Middle-earth.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780358623403"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0358623405"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 1240,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=vxRIEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=vxRIEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=vxRIEAAAQBAJ&printsec=frontcover&dq=fantasy+lord+of+the+rings&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=vxRIEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=vxRIEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 25.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 25.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=vxRIEAAAQBAJ&rdid=book-vxRIEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 25990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 25990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Lord_of_the_Rings_Illustrated-sample-epub.acsm?id=vxRIEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=vxRIEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This one-volume, jacketed hardcover edition contains the complete text, fully corrected and reset, which is printed in red and black and features, for the very first time, thirty color illustrations, maps and sketches drawn by Tolkien ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wTBMNwAACAAJ",
+      "etag": "IJ+A9RUo+1Q",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wTBMNwAACAAJ",
+      "volumeInfo": {
+        "title": "Fantasy and J.R.R. Tolkien's The Lord of the Rings",
+        "authors": [
+          "Kathryn J. Van Dyke"
+        ],
+        "publishedDate": "1971",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:18891004"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 206,
+        "printType": "BOOK",
+        "categories": [
+          "Fanatasic fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=wTBMNwAACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=wTBMNwAACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fantasy_and_J_R_R_Tolkien_s_The_Lord_of.html?hl=&id=wTBMNwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wTBMNwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wxqgEAAAQBAJ",
+      "etag": "NT7qEBX6D8g",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wxqgEAAAQBAJ",
+      "volumeInfo": {
+        "title": "The Influence of J.R.R. Tolkien’s Lord of the Rings Trilogy on modern Fantasy literature. Patrick Rothfuss’ \"The Kingkiller Chronicles\" as an example",
+        "authors": [
+          "Ezra Magnus Mähler"
+        ],
+        "publisher": "GRIN Verlag",
+        "publishedDate": "2022-12-06",
+        "description": "Bachelor Thesis from the year 2020 in the subject English Language and Literature Studies - Literature, grade: 1,5, University of Leipzig, language: English, abstract: This paper examines the traces of J.R.R. Tolkien’s work in today’s Fantasy literature. It is an indisputable fact that The Lord of the Rings (LOTR) is one of the most influential works of the 20th century and remains culturally relevant to this day. Today’s Fantasy literature and popular culture is so saturated and full of LOTR’s influence that it is difficult to imagine a culture without it. Even a person who has never read the original work or consumed any other adaptation of it will most likely recognise the names of Frodo, Gollum and Gandalf; and any modern reader of Fantasy literature and its branching genres like Science Fiction or Horror will know Tolkien’s name. Yet it is not just the readers who were influenced by Tolkien, on the contrary, following LOTR’s wake a whole array of authors began to write their own works, featuring fantastical worlds filled with trolls, wizards, elves, dwarves and the like. Most novels on today’s Fantasy best-seller and classics lists such as George R.R. Martin’s Song of Ice and Fire, Terry Pratchett’s Discworld or Ursula Le Guinn’s Earthsea Chronicles, to name just a select few, share definite traces of Tolkienesque elements, and, it can be argued that even those who actively dislike Tolkien and his work and thus went on to create something decidedly different are still influenced by him, even if in a spiteful sense. So, it is not a question of if there are traces of Tolkien’s work in today’s Fantasy literature, but rather to what extent. Thus, after explaining the chosen methodology and theoretical approach this paper will take to this subject, there will be a section dedicated to a pre-Tolkien world and the state of literature at the time, in an effort to fully understand the scope of Tolkien’s influence. Thereafter, a quick summary of both works will be given to introduce still unfamiliar readers to the subject matter that will later be analysed in detail. The next two chapters will deal with the analysis of all shared aspects and differences between the two works chosen, before lastly presenting a conclusion of all findings and offering a final verdict on the state of modern Fantasy literature.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783346774538"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3346774538"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 44,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.2.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wxqgEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wxqgEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=wxqgEAAAQBAJ&pg=PA4&dq=fantasy+lord+of+the+rings&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=wxqgEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=wxqgEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 17.52,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 17.52,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=wxqgEAAAQBAJ&rdid=book-wxqgEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 17520000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 17520000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Influence_of_J_R_R_Tolkien_s_Lord_of-sample-pdf.acsm?id=wxqgEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wxqgEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eFantasy\u003c/b\u003e literature. This is not to say that \u003cb\u003eFantasy\u003c/b\u003e literature did not exist prior to J.R.R. Tolkien&#39;s writing, because that would simply not be true. However, it is an indisputable fact that The \u003cb\u003eLord of the Rings\u003c/b\u003e (\u003cb\u003eLOTR\u003c/b\u003e) is one of the&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "AMFZQAAACAAJ",
+      "etag": "Q8W6rRFh7mQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/AMFZQAAACAAJ",
+      "volumeInfo": {
+        "title": "The Fellowship of the Ring",
+        "authors": [
+          "John Ronald Reuel Tolkien"
+        ],
+        "publishedDate": "2001-06-18",
+        "description": "In a sleepy village in the Shire, a young hobbit is entrusted with an immense task. He must make a perilous journey across Middle-earth to the Crack of Doom, there to destroy the Ruling Ring of Power - the only thing that prevents the Dark Lord's evil dominion.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0007117116"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007117116"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 416,
+        "printType": "BOOK",
+        "categories": [
+          "Baggins, Frodo (Fictitious character)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=AMFZQAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=AMFZQAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=AMFZQAAACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=AMFZQAAACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Fellowship_of_the_Ring.html?hl=&id=AMFZQAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=AMFZQAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The first in the Voyager Classics series, The Fellowship of the Ring is the first part of JRR Tolkien&#39;s epic masterpiece The Lord of the Rings."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "k39NBgAAQBAJ",
+      "etag": "shG/GEQvSvY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/k39NBgAAQBAJ",
+      "volumeInfo": {
+        "title": "Fantasy Fiction into Film",
+        "subtitle": "Essays",
+        "authors": [
+          "Leslie Stratyner",
+          "James R. Keller"
+        ],
+        "publisher": "McFarland",
+        "publishedDate": "2015-01-21",
+        "description": "This work examines the symbolism of fantasy fiction, literal and figurative representation in fantastic film adaptations, and the imaginative differences between page and screen. Essays focus on movies adapted from various types of fantasy fiction--novels, short stories and graphic novels--and study the transformation and literal translation from text to film in the Lord of the Rings, The Chronicles of Narnia, Charlie and the Chocolate Factory, Howl's Moving Castle, Finding Neverland, The Wizard of Oz, Wicked and Practical Magic.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781476611358"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1476611351"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 205,
+        "printType": "BOOK",
+        "categories": [
+          "Performing Arts"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=k39NBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=k39NBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=k39NBgAAQBAJ&pg=PA53&dq=fantasy+lord+of+the+rings&hl=&cd=9&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=k39NBgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=k39NBgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 19.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 19.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=k39NBgAAQBAJ&rdid=book-k39NBgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 19990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 19990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Fantasy_Fiction_into_Film-sample-epub.acsm?id=k39NBgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Fantasy_Fiction_into_Film-sample-pdf.acsm?id=k39NBgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=k39NBgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eLord of the Rings\u003c/b\u003e Films , After St. Thomas Aquinas . ” In Janet Brennan Croft . Tolkien on Film : Essays on Peter Jackson&#39;s The \u003cb\u003eLord of the Rings\u003c/b\u003e . Altadena , CA : Mythopoeic Press , 2004 . Chance , Jane . &quot; Tolkien&#39;s Women ( and Men )&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "_1LmoQEACAAJ",
+      "etag": "JR/lwzoZD8k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/_1LmoQEACAAJ",
+      "volumeInfo": {
+        "title": "J.R.R. Tolkien's the Lord of the Rings",
+        "subtitle": "A Fantasy Film",
+        "authors": [
+          "John Ronald Reuel Tolkien"
+        ],
+        "publishedDate": "1979",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:886846171"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 47,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=_1LmoQEACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=_1LmoQEACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/J_R_R_Tolkien_s_the_Lord_of_the_Rings.html?hl=&id=_1LmoQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=_1LmoQEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "mfjAjibERF0C",
+      "etag": "JUow8rQsWQc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mfjAjibERF0C",
+      "volumeInfo": {
+        "title": "The Encyclopedia of Fantasy",
+        "authors": [
+          "John Clute",
+          "John Grant"
+        ],
+        "publisher": "Macmillan",
+        "publishedDate": "1999-03-15",
+        "description": "Like its companion volume, \"The Encyclopedia of Science Fiction\", this massive reference of 4,000 entries covers all aspects of fantasy, from literature to art.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0312198698"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780312198695"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1110,
+        "printType": "BOOK",
+        "categories": [
+          "Art"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.4.6.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mfjAjibERF0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mfjAjibERF0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=mfjAjibERF0C&pg=PA953&dq=fantasy+lord+of+the+rings&hl=&cd=11&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=mfjAjibERF0C&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Encyclopedia_of_Fantasy.html?hl=&id=mfjAjibERF0C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mfjAjibERF0C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003efantasy\u003c/b\u003e author to mix DIC- TIONS within single passages , usually to contrast an archaic form of speech with the ... \u003cb\u003eLord of the Rings\u003c/b\u003e ( 1954 ; rev 1965 US ) , The Two Towers : Being the Second Part of The \u003cb\u003eLord of the Rings\u003c/b\u003e ( 1954&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "B0loOBA3ejIC",
+      "etag": "CoRh65WT2vs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/B0loOBA3ejIC",
+      "volumeInfo": {
+        "title": "J.R.R. Tolkien Encyclopedia",
+        "subtitle": "Scholarship and Critical Assessment",
+        "authors": [
+          "Michael D. C. Drout"
+        ],
+        "publisher": "Taylor & Francis",
+        "publishedDate": "2007",
+        "description": "A detailed work of reference and scholarship, this one volume Encyclopedia includes discussions of all the fundamental issues in Tolkien scholarship written by the leading scholars in the field. Coverage not only presents the most recent scholarship on J.R.R. Tolkien, but also introduces and explores the author and scholar's life and work within their historical and cultural contexts. Tolkien's fiction and his sources of influence are examined along with his artistic and academic achievements - including his translations of medieval texts - teaching posts, linguistic works, and the languages he created. The 550 alphabetically arranged entries fall within the following categories of topics: adaptations art and illustrations characters in Tolkien's work critical history and scholarship influence of Tolkien languages biography literary sources literature creatures and peoples of Middle-earth objects in Tolkien's work places in Tolkien's work reception of Tolkien medieval scholars scholarship by Tolkien medieval literature stylistic elements themes in Tolkien's works theological/ philosophical concepts and philosophers Tolkien's contemporary history and culture works of literature",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780415969420"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0415969425"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 810,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=B0loOBA3ejIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=B0loOBA3ejIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=B0loOBA3ejIC&pg=PA229&dq=fantasy+lord+of+the+rings&hl=&cd=12&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=B0loOBA3ejIC&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/J_R_R_Tolkien_Encyclopedia.html?hl=&id=B0loOBA3ejIC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/J_R_R_Tolkien_Encyclopedia-sample-pdf.acsm?id=B0loOBA3ejIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=B0loOBA3ejIC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003efantasy\u003c/b\u003e RPG is not limited to the realities or history of our world . In the 1960s , shortly after the launch of the first commercially available war game by the Avalon - Hill Game Com- pany , the second edition of The \u003cb\u003eLord of the Rings\u003c/b\u003e&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "CHdlAAAAMAAJ",
+      "etag": "xyT4A3Zr698",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/CHdlAAAAMAAJ",
+      "volumeInfo": {
+        "title": "The Rise of Tolkienian Fantasy",
+        "authors": [
+          "Jared Lobdell"
+        ],
+        "publishedDate": "2005",
+        "description": "\"Finally, Lobdell looks at some of the ablest heirs of the master: contemporary fantasists Ursula Le Guin, Stephen King (in the Dark Tower series), and J. K. Rowling.\"--BOOK JACKET.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015062614261"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 212,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=CHdlAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=CHdlAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=CHdlAAAAMAAJ&q=fantasy+lord+of+the+rings&dq=fantasy+lord+of+the+rings&hl=&cd=13&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=CHdlAAAAMAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Rise_of_Tolkienian_Fantasy.html?hl=&id=CHdlAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=CHdlAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003efantasy\u003c/b\u003e &quot; through Tolkienian \u003cb\u003efantasy\u003c/b\u003e , through The \u003cb\u003eLord of the Rings\u003c/b\u003e , recognize and welcome what is now called fan- tasy ? Could he or she could I take down a book from book- store shelves labelled &quot; \u003cb\u003eFantasy\u003c/b\u003e &quot; and be reasonably sure of&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "PI9zPwAACAAJ",
+      "etag": "tn3wjC3vW6M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/PI9zPwAACAAJ",
+      "volumeInfo": {
+        "title": "The Return of the King",
+        "subtitle": "Being the Third Part of The Lord of the Rings",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publishedDate": "2003",
+        "description": "THE GREATEST FANTASY EPIC OF OUR TIME While the evil might of the Dark Lord Sauron swarmed out to conquer all Middle-earth, Frodo and Sam struggled deep into Mordor, seat of Sauron's power. To defeat the Dark Lord, the accursed Ring of Power had to be destroyed in the fires of Mount Doom. But the way was impossibly hard, and Frodo was weakening. Weighed down by the compulsion of the Ring he began finally to despair. The awesome conclusion of J.R.R. Tolkien's The Lord of the Rings, beloved by millions of readers around the world.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0007171994"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007171996"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 576,
+        "printType": "BOOK",
+        "categories": [
+          "Baggins, Frodo (Fictitious character)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PI9zPwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PI9zPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=PI9zPwAACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=14&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=PI9zPwAACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Return_of_the_King.html?hl=&id=PI9zPwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PI9zPwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This is the final part of Tolkien&#39;s epic masterpiece, The Lord of the Rings, featuring a cover image from the film. fiction has been labelled both a heroic romance and a classic fantasy fiction."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GT3hAAAAMAAJ",
+      "etag": "5PmkQRwtMVA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GT3hAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Fantasy Literature for Children and Young Adults",
+        "subtitle": "An Annotated Bibliography",
+        "authors": [
+          "Ruth Nadelman Lynn"
+        ],
+        "publisher": "Libraries Unlimited",
+        "publishedDate": "1995-01-30",
+        "description": "Drawing on distinguished review sources, this updated and expanded guide recommends more than 4,800 American and British fantasy novels and anthologies, including nearly 1,500 new to this edition. Ten topical chapters embrace the entire range of fantasy literature, from allegory to witchcraft. Detailed annotations note major awards won, review citations, suggested reading level, other related titles by the author, and more. - Back cover.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015033335780"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1186,
+        "printType": "BOOK",
+        "categories": [
+          "Language Arts & Disciplines"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.8.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GT3hAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GT3hAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=GT3hAAAAMAAJ&q=fantasy+lord+of+the+rings&dq=fantasy+lord+of+the+rings&hl=&cd=15&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GT3hAAAAMAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fantasy_Literature_for_Children_and_Youn.html?hl=&id=GT3hAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GT3hAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eFantasy\u003c/b\u003e and Science ... \u003cb\u003eFantasy\u003c/b\u003e Literature , vol . 4 . Edited by Frank N. Magill . Englewood Cliffs , NJ : Salem Press , 1983 , pp . 1733-1743 . Lense , Edward . &quot; Sauron Is Watching You : The Role of the Great Eye in The \u003cb\u003eLord of the Rings\u003c/b\u003e&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "m1KYDQAAQBAJ",
+      "etag": "sX9pZwVVpf4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/m1KYDQAAQBAJ",
+      "volumeInfo": {
+        "title": "J.R.R. Tolkien, Unrated Genius, Visionary and Creator of Fantasy Worlds. His Novels and Influence on Today's Youth",
+        "authors": [
+          "Łukasz Gołąbek"
+        ],
+        "publisher": "GRIN Verlag",
+        "publishedDate": "2016-11-08",
+        "description": "Essay from the year 2012 in the subject English Language and Literature Studies - Literature, grade: 1,0, University of Bielsko-Biała, language: English, abstract: Professor of Anglo-Saxon at Oxford University, a brilliant philologist, and a self-described \"hobbit,\" J. R. R. Tolkien created two of the best-loved stories of the 20th century. \"The Hobbit\" and \"The Lord of the Rings\" were recently made into multiple award-winning movies by director Peter Jackson for New Line Cinema. Is Tolkien a genius, a visionary ? This paper will figure it out by tracing Tolkien's biography and determining his influence on the generations of readers and viewers that followed him.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783668336681"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3668336687"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 17,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=m1KYDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=m1KYDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=m1KYDQAAQBAJ&pg=PA3&dq=fantasy+lord+of+the+rings&hl=&cd=16&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=m1KYDQAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=m1KYDQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 15.07,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.07,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=m1KYDQAAQBAJ&rdid=book-m1KYDQAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 15070000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15070000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/J_R_R_Tolkien_Unrated_Genius_Visionary_a-sample-epub.acsm?id=m1KYDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/J_R_R_Tolkien_Unrated_Genius_Visionary_a-sample-pdf.acsm?id=m1KYDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=m1KYDQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eLord of the Rings\u003c/b\u003e trilogy. Though a great number of people hailed \u003cb\u003eLord of the Rings\u003c/b\u003e as the first true \u003cb\u003efantasy\u003c/b\u003e.&quot;1 Secondly we need some informations about Tolkien because without that we can&#39;t go ahead. Tolkien&#39;s. Biography*. Philologist&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "UNhZjwEACAAJ",
+      "etag": "F7w6c6IDiYM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UNhZjwEACAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "subtitle": "The Trilogy",
+        "publishedDate": "2002",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0563528885"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780563528883"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UNhZjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UNhZjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=UNhZjwEACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=17&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=UNhZjwEACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=UNhZjwEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UNhZjwEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "kWIoyAEACAAJ",
+      "etag": "D7cu88ld1gE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kWIoyAEACAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "subtitle": "Book 2 The ring goes south",
+        "authors": [
+          "John Ronald Reuel Tolkien"
+        ],
+        "publishedDate": "2001",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0007124015"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780007124015"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 253,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction, English"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=kWIoyAEACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=18&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=kWIoyAEACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=kWIoyAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kWIoyAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "PdHrAAAAMAAJ",
+      "etag": "2EKOkmwk8/U",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/PdHrAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Science Fiction, Fantasy, & Horror",
+        "publishedDate": "1988",
+        "description": "A comprehensive bibliography of books and short fiction published in the English language.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PSU:000017465915"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 478,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.7.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=PdHrAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=PdHrAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=PdHrAAAAMAAJ&pg=PA79&dq=fantasy+lord+of+the+rings&hl=&cd=19&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=PdHrAAAAMAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Science_Fiction_Fantasy_Horror.html?hl=&id=PdHrAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=PdHrAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "x5R1AQAACAAJ",
+      "etag": "FGefpvsg57s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/x5R1AQAACAAJ",
+      "volumeInfo": {
+        "title": "The Lord of the Rings",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publishedDate": "1982",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0345339711"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780345339713"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=x5R1AQAACAAJ&dq=fantasy+lord+of+the+rings&hl=&cd=20&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=x5R1AQAACAAJ&dq=fantasy+lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Lord_of_the_Rings.html?hl=&id=x5R1AQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=x5R1AQAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The middle novel in The Lord of the Rings—the greatest fantasy epic of all time—which began in The Fellowship of the Ring, and which reaches its magnificent climax in The Return of the King."
+      }
+    }
+  ]
+}

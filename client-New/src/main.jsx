@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import "@mantine/carousel/styles.css";
 import "@mantine/core/styles.css";
 import "./index.css";
 
